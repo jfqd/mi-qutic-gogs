@@ -8,5 +8,7 @@ gsed -i \
   -e 's:.*PermitUserEnvironment.*no:PermitUserEnvironment yes:g' \
   /etc/ssh/sshd_config
 
+svcadm restart svc:/network/ssh:default
+
 svccfg import /opt/local/lib/svc/manifest/gogs.xml
 svcadm enable -r svc:/application/gogs:default
