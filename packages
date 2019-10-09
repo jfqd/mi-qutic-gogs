@@ -3,5 +3,6 @@ go
 redis
 nginx
 nodejs
+npm
 zip
 build-essential
