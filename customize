@@ -30,8 +30,8 @@ npm install -g less
 go get -u -tags "redis memcache cert" github.com/gogs/gogs
 cd "${GOPATH}/src/github.com/gogs/gogs"
 go build
-"${GOPATH}/bin/gopm" update -v
-"${GOPATH}/bin/gopm" bin -u -v gogs -d /opt/local/bin
+# "${GOPATH}/bin/gopm" update -v
+# "${GOPATH}/bin/gopm" bin -u -v gogs -d /opt/local/bin
 
 # Clean up
 echo "* Cleaning up."
