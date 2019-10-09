@@ -1,4 +1,6 @@
 #!/usr/bin/bash
 
-export PATH=/opt/local/bin:${PATH}
-/opt/local/bin/gogs web 2>&1 &
+export GOPATH=/home/gogs/go
+export PATH=/home/gogs/go/src/github.com/gogs/gogs:${PATH}
+cd /home/gogs/go/src/github.com/gogs/gogs/
+./gogs web 2>&1 &
