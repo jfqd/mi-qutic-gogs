@@ -24,14 +24,13 @@ chown gogs:gogs /home/gogs/.ssh
 
 echo "* Build gogs";
 export GOPATH=/home/gogs/go
-mkdir ${GOPATH}
+mkdir "${GOPATH}"
 
 npm install -g less
 go get -u -tags "redis memcache cert" github.com/gogs/gogs
 cd "${GOPATH}/src/github.com/gogs/gogs"
 go build
-# "${GOPATH}/bin/gopm" update -v
-# "${GOPATH}/bin/gopm" bin -u -v gogs -d /opt/local/bin
+cp /home/gogs/go/bin/gogs /opt/local/bin/gogs
 
 # Clean up
 echo "* Cleaning up."

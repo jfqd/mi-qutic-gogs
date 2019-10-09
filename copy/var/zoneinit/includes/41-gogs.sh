@@ -8,5 +8,5 @@ gsed -i \
   -e 's:.*PermitUserEnvironment.*no:PermitUserEnvironment yes:g' \
   /etc/ssh/sshd_config
 
-svccfg import /opt/local/lib/svc/gogs/blogspam.xml
+svccfg import /opt/local/lib/svc/manifest/gogs.xml
 svcadm enable -r svc:/application/gogs:default
