@@ -39,6 +39,8 @@ chown gogs:gogs /home/gogs/go/src/github.com/gogs/gogs/custom/conf
 mkdir -p /home/gogs/go/src/github.com/gogs/gogs/data/avatars
 chown -R gogs:gogs /home/gogs/go/src/github.com/gogs/gogs/data
 
+ln -nf /home/gogs/go/src/github.com/gogs/gogs/log/gogs.log /var/log/gogs_log
+
 # Clean up
 echo "* Cleaning up."
 rm /root/customize
