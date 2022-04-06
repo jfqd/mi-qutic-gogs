@@ -1,13 +1,12 @@
 # Changelog
 
-## 20181018.2
+## 20201019.0
 
-* Add entries to blacklist fields
-* Compile latest blogspam-api version
-
-## 20181018.1
-
-* Add blogspam config files
+* Update gogs to v0.12.6
+* use custom app.ini
+* remove munin and use zabbix
+* setup ssh key for gogs user
+* Use latest base image
 
 ## 20181018.0
 
